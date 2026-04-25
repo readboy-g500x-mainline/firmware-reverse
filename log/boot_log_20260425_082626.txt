@@ -1,0 +1,702 @@
+[406340] fastboot: download:00954800
+[406640] fastboot: boot
+[406640] decompressing kernel image: start
+[407150] decompressing kernel image: done
+[407150] Best match DTB tags 1/294/0002000b/0x00000000/0/10019/20037/0/0/a0a48f6b/b2aa
+[407160] Using pmic info 0x10019/0x20037/0x0/0x0 for device 0x10019/0x20037/0x0/0x0
+[407180] Updating device tree: start
+[407190] Updating device tree: done
+[407200] booting linux @ 0x40000000, ramdisk @ 0x43600000 (0), tags/device tree @ 0x43400000
+[407200] Jumping to kernel via monitor
+[    0.000000] Booting Linux on physical CPU 0x0000000100 [0x410fd034]
+[    0.000000] Linux version 7.0.0-msm89x7 (lkno@archlinux-lkno) (aarch64-linux-gnu-gcc (GCC) 15.1.0, GNU ld (GNU Binutils) 2.44) #1 SMP PREEMPT Sat Apr 25 00:45:33 CST 2026
+[    0.000000] KASLR disabled due to lack of seed
+[    0.000000] Machine model: Readboy G500X
+[    0.000000] earlycon: msm_serial_dm0 at MMIO 0x00000000078b0000 (options '115200n8')
+[    0.000000] printk: legacy bootconsole [msm_serial_dm0] enabled
+[    0.000000] printk: debug: ignoring loglevel setting.
+[    0.000000] efi: UEFI not found.
+[    0.000000] OF: reserved mem: 0x0000000085b00000..0x00000000862fffff (8192 KiB) nomap non-reusable reserved@85b00000
+[    0.000000] OF: reserved mem: 0x0000000086300000..0x00000000863fffff (1024 KiB) nomap non-reusable smem@86300000
+[    0.000000] OF: reserved mem: 0x0000000086400000..0x00000000867fffff (4096 KiB) nomap non-reusable reserved@86400000
+[    0.000000] OF: reserved mem: 0x0000000092100000..0x000000009227ffff (1536 KiB) nomap non-reusable rmtfs@92100000
+[    0.000000] cma: Reserved 16 MiB at 0x00000000fe800000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] psci: OSI mode supported.
+[    0.000000] psci: [Firmware Bug]: failed to set PC mode: -1
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x0000000085afffff]
+[    0.000000]   node   0: [mem 0x0000000085b00000-0x00000000867fffff]
+[    0.000000]   node   0: [mem 0x0000000086800000-0x00000000920fffff]
+[    0.000000]   node   0: [mem 0x0000000092100000-0x000000009227ffff]
+[    0.000000]   node   0: [mem 0x0000000092280000-0x00000000ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000] percpu: Embedded 34 pages/cpu s98520 r8192 d32552 u139264
+[    0.000000] pcpu-alloc: s98520 r8192 d32552 u139264 alloc=34*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: console=ttyMSM0,115200n8 earlycon ignore_loglevel loglevel=8 clk_ignore_unused modprobe.blacklist=msm 
+[    0.000000] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 3MB
+[    0.000000] software IO TLB: area num 8.
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size roundup to 4MB
+[    0.000000] software IO TLB: mapped [mem 0x00000000fae00000-0x00000000fb200000] (4MB)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 786432
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] ftrace: allocating 43818 entries in 172 pages
+[    0.000000] ftrace: allocated 172 pages with 4 groups
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+[    0.000000] RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.000000] RCU Tasks Rude: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer running at 19.20MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000001] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.010974] Console: colour dummy device 80x25
+[    0.018683] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.00 BogoMIPS (lpj=64000)
+[    0.023187] pid_max: default: 32768 minimum: 301
+[    0.033823] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.038212] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.046007] VFS: Finished mounting rootfs on nullfs
+[    0.056501] rcu: Hierarchical SRCU implementation.
+[    0.058003] rcu: 	Max phase no-delay instances is 1000.
+[    0.063187] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.068873] EFI services will not be available.
+[    0.076867] smp: Bringing up secondary CPUs ...
+[    0.081691] Detected VIPT I-cache on CPU1
+[    0.082099] CPU1: Booted secondary processor 0x0000000000 [0x410fd034]
+[    0.083253] Detected VIPT I-cache on CPU2
+[    0.083595] CPU2: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.084761] Detected VIPT I-cache on CPU3
+[    0.085111] CPU3: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.086240] Detected VIPT I-cache on CPU4
+[    0.086592] CPU4: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.087714] Detected VIPT I-cache on CPU5
+[    0.087941] CPU5: Booted secondary processor 0x0000000101 [0x410fd034]
+[    0.088929] Detected VIPT I-cache on CPU6
+[    0.089123] CPU6: Booted secondary processor 0x0000000102 [0x410fd034]
+[    0.090073] Detected VIPT I-cache on CPU7
+[    0.090264] CPU7: Booted secondary processor 0x0000000103 [0x410fd034]
+[    0.090394] smp: Brought up 1 node, 8 CPUs
+[    0.162861] SMP: Total of 8 processors activated.
+[    0.166921] CPU: All CPU(s) started at EL1
+[    0.171715] CPU features: detected: 32-bit EL0 Support
+[    0.175714] CPU features: detected: 32-bit EL1 Support
+[    0.180812] CPU features: detected: CRC32 instructions
+[    0.185933] CPU features: detected: PMUv3
+[    0.191152] alternatives: applying system-wide alternatives
+[    0.197719] Memory: 3016928K/3145728K available (14976K kernel code, 2102K rwdata, 4064K rodata, 1984K init, 420K bss, 105732K reserved, 16384K cma-reserved)
+[    0.202140] devtmpfs: initialized
+[    0.227792] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    0.227865] posixtimers hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.236495] futex hash table entries: 2048 (131072 bytes on 1 NUMA nodes, total 128 KiB, linear).
+[    0.244516] 26816 pages in range for non-PLT usage
+[    0.244524] 518336 pages in range for PLT usage
+[    0.253974] DMI not present or invalid.
+[    0.265124] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.267116] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.271640] audit: initializing netlink subsys (disabled)
+[    0.279868] audit: type=2000 audit(0.159:1): state=initialized audit_enabled=0 res=1
+[    0.281117] thermal_sys: Registered thermal governor 'step_wise'
+[    0.284955] cpuidle: using governor menu
+[    0.298842] NET: Registered PF_QIPCRTR protocol family
+[    0.302748] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.307868] ASID allocator initialised with 65536 entries
+[    0.326928] Internal error: synchronous external abort: 0000000096000210 [#1]  SMP
+
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.BF.3.3-00206
+S - IMAGE_VARIANT_STRING=FAASANAZA
+S - OEM_IMAGE_VERSION_STRING=dslrjb-ARM
+S - Boot Config, 0x000000e1
+B -       246 - PBL, Start
+B -      2947 - bootable_media_detect_entry, Start
+B -    129543 - bootable_media_detect_success, Start
+B -    129549 - elf_loader_entry, Start
+B -    131332 - auth_hash_seg_entry, Start
+B -    131582 - auth_hash_seg_exit, Start
+B -    160583 - elf_segs_hash_verify_entry, Start
+B -    260877 - PBL, End
+B -    270992 - SBL1, Start
+B -    325404 - pm_device_init, Start
+B -    328759 - PON REASON:PM0:0x20020 PM1:0x200020020 
+D -     25986 - pm_device_init, Delta
+B -    353251 - boot_flash_init, Start
+D -         0 - boot_flash_init, Delta
+B -    355569 - boot_config_data_table_init, Start
+D -      8814 - boot_config_data_table_init, Delta - (0 Bytes)
+B -    369019 - CDT version:3,Platform ID:11,Major ID:2,Minor ID:0,Subtype:0
+B -    375089 - sbl1_ddr_set_params, Start
+B -    379359 - cpr_init, Start
+D -      3751 - cpr_init, Delta
+B -    385398 - Pre_DDR_clock_init, Start
+D -       335 - Pre_DDR_clock_init, Delta
+D -         0 - sbl1_ddr_set_params, Delta
+B -    397628 - do ddr sanity test, Start
+D -       305 - do ddr sanity test, Delta
+B -    403301 - pm_driver_init, Start
+B -    409767 - Manually set to USB500 mode
+B -    410530 - raw vbat: 3861, gain: -16
+B -    414312 - vbat: 3706
+B -    416691 - Battery good, bootup
+D -     13389 - pm_driver_init, Delta
+B -    423401 - vsense_init, Start
+D -         0 - vsense_init, Delta
+B -    430172 - DDR Training restore, Start
+D -       274 - DDR Training restore, Delta
+B -    445208 - clock_init, Start
+D -       152 - clock_init, Delta
+B -    445483 - Image Load, Start
+D -     85949 - QSEE Image Loaded, Delta - (1475036 Bytes)
+B -    531462 - Image Load, Start
+D -       274 - SEC Image Loaded, Delta - (2048 Bytes)
+B -    538782 - sbl1_efs_handle_cookies, Start
+D -       549 - sbl1_efs_handle_cookies, Delta
+B -    546560 - Image Load, Start
+D -     12566 - DEVCFG Image Loaded, Delta - (55444 Bytes)
+B -    559827 - Image Load, Start
+D -     20435 - RPM Image Loaded, Delta - (180844 Bytes)
+B -    580293 - Image Load, Start
+D -     52155 - APPSBL Image Loaded, Delta - (572640 Bytes)
+B -    632478 - QSEE Execution, Start
+D -       122 - QSEE Execution, Delta
+B -    638243 - USB D+ check, Start
+D -       732 - USB D+ check, Delta
+B -    644587 - SBL1, End
+D -    375943 - SBL1, Delta
+S - Flash Throughput, 26000 KB/s  (2289404 Bytes,  85332 us)
+S - DDR Frequency, 806 MHz
+S - Core 0 Frequency, 800 MHz
+Android Bootloader - UART_DM Initialized!!!
+[40] Qseecom Init Done in Appsbl
+[40] secure app region addr=0x85b00000 size=0x800000[50] TZ App region notif returned with status:0 addr:85b00000 size:8388608
+[50] TZ App log region register returned with status:0 addr:8f6a6000 size:4096
+[60] Qseecom TZ Init Done in Appsbl
+[70] Loading cmnlib done
+[80] <8>keymaster: "\"KEYMASTER Init \""
+[110] init_panel_data BOE_NS0_1200p_VIDEO_PANEL
+[120] <init_panel_data> panel_id = boe_ns0_1200p_video
+[120] <init_panel_data> panel_id = 5
+[190] jiyh: target_panel_reset: enable gpio: 24, reset gpio: 60, vio_gpio: 47, vci_gpio: 131
+[190]  target_panel_reset: pinfo->mipi.use_enable_gpio: 0
+[210] target_panel_reset: pinfo->is_avdd_en 1
+[1250] zdn_add mdss_dsi_panel_initialize in 
+[1250] zdn_add panel tx status 0 1 
+[1250] mdss_dsi_read_panel_signature:zdn_add  panel_signature 82790d.
+[1290] Panel CMD: command mode dma test failed
+[1290] 82790d Panel id:0x0 ret 0.
+[1320] Panel CMD: command mode dma test failed
+[1330] 82790d Panel id:0x0 ret 0.
+[1360] Panel CMD: command mode dma test failed
+[1360] 82790d Panel id:0x0 ret 0.
+[1370] mdss_dsi_read_panel_signature:zdn_add in response_value 0.
+[1370] zdn_add response_value 0 status 82790d 
+[1380] dsi panel init error
+[1610] target_backlight_ctrl in
+[1610] pwm ctrl enable=0
+[2080] <init_panel_data> switch(tp_id) tp_id = 1
+[2090] init_panel_data XZ_NT51021_1200p_VIDEO_PANEL from tp_id
+[2090] <init_panel_data> panel_id = xz_nt51021_1200p_video
+[2100] <init_panel_data> panel_id = 7
+[2160] jiyh: target_panel_reset: enable gpio: 24, reset gpio: 60, vio_gpio: 47, vci_gpio: 131
+[2170]  target_panel_reset: pinfo->mipi.use_enable_gpio: 1
+[2180] target_panel_reset: pinfo->is_avdd_en 0
+[3260] zdn_add mdss_dsi_panel_initialize in 
+[3260] zdn_add panel tx status 0 1 
+[3260] mdss_dsi_read_panel_signature:zdn_add  panel_signature 0.
+[3270] mdss_dsi_read_panel_signature:zdn_add in response_value 0.
+[3270] zdn_add response_value 0 status 0 
+[3380] mdss_dsi_panel_initialize status 0 
+[3460] target_backlight_ctrl in
+[3460] pwm ctrl enable=1
+[3480] <target_display_init> display init done, Go to save_display_panel_to_oem!!
+[3500] <get_oem_display_panel_from_supp_panels> display_panel:xz_nt51021_1200p_video
+[3500] <save_display_panel_to_oem> ret:7
+[3510] date:0x7d16
+[3510] psn:0xaa398760
+[3510] serialno:7d16aa398760
+[3510] Device is unlocked! Skipping verification...
+[3520] Your device has been unlocked and can't be trusted!
+[3520] <8>keymaster: "\"cmd_id=KEYMASTER_SET_ROT\""
+[3530] <8>keymaster: "\"cmd_id=KEYMASTER_GET_VERSION\""
+[3530] Authentication Key not yet programmed
+[3540] <8>keymaster: "\"QSEE_STOR_RPMB_NOT_PROVISIONED\""
+[3540] qcom,board-id in device tree is (12) not a multiple of (8)
+[3550] Using default #addr_cell_size: 2
+[3550] Using default #size_cell_size: 1
+[3560] Using default #addr_cell_size: 2
+[3560] Using default #size_cell_size: 1
+[3570] <8>keymaster: "\"cmd_id=KEYMASTER_MILESTONE_CALL\""
+[3570] Qseecom De-Init Done in Appsbl
+[3580] Channel alloc freed
+Android Bootloader - UART_DM Initialized!!!
+[0] welcome to lk
+
+[10] platform_init()
+[10] target_init()
+[20] MMC card: SLD64G (3.0, 06 2001), manufacturer: 88, OEM: 103, capacity: 61865984000 bytes
+[30] SDHC Running in HS400 mode
+[40] Done initialization of the card
+[40] Waiting for the RPM to populate smd channel table
+[40] lk2nd_init()
+[50] Booted @ 0x40008000, r0=0x0, r1=0x0, r2=0x43400000
+[50] MMU mapping mismatch @ 0x43400000: 0x43401c1e != 0x43400c1a
+[60] Found valid DTB with 1016 bytes total
+[60] Command line from previous bootloader: lk2nd androidboot.emmc=true androidboot.verifiedbootstate=orange androidboot.veritymode=enforcing androidboot.keymaster=1 androidboot.serialno=7d16aa398760 androidboot.baseband=msm mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_xz_nt51021_video:1:none:cfg:single_dsi:ldo17_status=1
+[90] Failed to find matching lk2nd device node: -1
+[100] MDP continuous splash detected: pipe RGB_0, base: 0x90001000, stride: 3600, src: 1200x1920 (0,0), img: 1200x1920, out: 1200x1920 (0,0), format: 0x2243f (bpp: 3)
+[120] Display refresh: cmd mode: 0, auto refresh: 0 (sel: 0x1f20)
+[130] Registering wrapper bio devices...
+[140] Registering mmc_sdhci bio devices...
+[150] Error: Command timeout error
+[150] Failure getting OCR response from MMC Card
+[150] MMC card failed to respond, try for SD card
+[160] Error: Command timeout error
+[160] The response for CMD8 does not match the supplied value
+[160] Failed to initialize SD card
+[170] Failed detecting MMC/SDC @ slot2
+[170] SD card MMC is unavailable.
+[170] block devices:
+[180]  | dev        | label           | size       | Leaf |
+[180]  | wrp0p47    | lk2nd           |    512 KiB | Yes  |
+[190]  | wrp0p46    | userdata        |  52983 MiB | Yes  |
+[190]  | wrp0p45    | logdump         |     64 MiB | Yes  |
+[200]  | wrp0p44    | dpo             |      8 KiB | Yes  |
+[200]  | wrp0p43    | msadp           |    256 KiB | Yes  |
+[210]  | wrp0p42    | apdp            |    256 KiB | Yes  |
+[210]  | wrp0p41    | keymasterbak    |    256 KiB | Yes  |
+[220]  | wrp0p40    | keymaster       |    256 KiB | Yes  |
+[220]  | wrp0p39    | cmnlib64bak     |    256 KiB | Yes  |
+[230]  | wrp0p38    | cmnlib64        |    256 KiB | Yes  |
+[230]  | wrp0p37    | cmnlibbak       |    256 KiB | Yes  |
+[240]  | wrp0p36    | cmnlib          |    256 KiB | Yes  |
+[250]  | wrp0p35    | mcfg            |      4 MiB | Yes  |
+[250]  | wrp0p34    | syscfg          |    512 KiB | Yes  |
+[260]  | wrp0p33    | mdtp            |     32 MiB | Yes  |
+[260]  | wrp0p32    | dip             |   1024 KiB | Yes  |
+[270]  | wrp0p31    | mota            |    512 KiB | Yes  |
+[270]  | wrp0p30    | limits          |     32 KiB | Yes  |
+[280]  | wrp0p29    | oem             |    256 MiB | Yes  |
+[280]  | wrp0p28    | config          |     32 KiB | Yes  |
+[290]  | wrp0p27    | keystore        |    512 KiB | Yes  |
+[290]  | wrp0p26    | misc            |   1024 KiB | Yes  |
+[300]  | wrp0p25    | persist         |     32 MiB | Yes  |
+[300]  | wrp0p24    | cache           |    256 MiB | Yes  |
+[310]  | wrp0p23p1  |                 |    832 MiB | Yes  |
+[310]  | wrp0p23p0  |                 |    243 MiB | Yes  |
+[320]  | wrp0p23    | system          |   4608 MiB |      |
+[320]  | wrp0p22    | devinfo         |   1024 KiB | Yes  |
+[330]  | wrp0p21    | recovery        |     64 MiB | Yes  |
+[340]  | wrp0p20    | boot            |     63 MiB | Yes  |
+[340]  | wrp0p19    | abootbak        |   1024 KiB | Yes  |
+[350]  | wrp0p18    | aboot           |   1024 KiB | Yes  |
+[350]  | wrp0p17    | splash          |     11 MiB | Yes  |
+[360]  | wrp0p16    | sec             |     16 KiB | Yes  |
+[360]  | wrp0p15    | fsg             |      1 MiB | Yes  |
+[370]  | wrp0p14    | DDR             |     32 KiB | Yes  |
+[370]  | wrp0p13    | modemst2        |      1 MiB | Yes  |
+[380]  | wrp0p12    | modemst1        |      1 MiB | Yes  |
+[380]  | wrp0p11    | dsp             |     16 MiB | Yes  |
+[390]  | wrp0p10    | devcfgbak       |    256 KiB | Yes  |
+[390]  | wrp0p9     | devcfg          |    256 KiB | Yes  |
+[400]  | wrp0p8     | tzbak           |      2 MiB | Yes  |
+[400]  | wrp0p7     | tz              |      2 MiB | Yes  |
+[410]  | wrp0p6     | rpmbak          |    512 KiB | Yes  |
+[410]  | wrp0p5     | rpm             |    512 KiB | Yes  |
+[420]  | wrp0p4     | sbl1bak         |    512 KiB | Yes  |
+[430]  | wrp0p3     | sbl1            |    512 KiB | Yes  |
+[430]  | wrp0p2     | ssd             |      8 KiB | Yes  |
+[440]  | wrp0p1     | fsc             |      1 KiB | Yes  |
+[440]  | wrp0p0     | modem           |     84 MiB | Yes  |
+[450]  | wrp0       |                 |  59000 MiB |      |
+[450] boot: Trying to boot from the file system...
+[460] boot: Bootable file system not found. Reverting to android boot.
+[460] Loading (boot) image (33906688): start
+[610] Loading (boot) image (33906688): done
+[610] use_signed_kernel=0, is_unlocked=1, is_tampered=0.
+[620] Uncpmpressed kernel in use
+[620] Kernel image not patched..Unable to locate dt offset
+[620] DTB offset is incorrect, kernel image does not have appended DTB
+[630] Device info 0x00000126/00010000/0x0002000b/0, pmic 0x10019/0x20037/0x0/0x0
+[640] ERROR: Appended Device Tree Blob not found
+[640] ERROR: Could not do normal boot. Reverting to fastboot mode.
+[650] fastboot_init()
+[750] USB init ept @ 0x8f692000
+[770] udc_start()
+[910] -- reset --
+[910] -- portchange --
+[970] -- reset --
+[970] -- portchange --
+[1050] fastboot: processing commands
+[1550] fastboot: download:00954800
+[1850] fastboot: boot
+[1850] decompressing kernel image: start
+[2360] decompressing kernel image: done
+[2360] Best match DTB tags 1/294/0002000b/0x00000000/0/10019/20037/0/0/a0a48f6b/b2aa
+[2370] Using pmic info 0x10019/0x20037/0x0/0x0 for device 0x10019/0x20037/0x0/0x0
+[2390] Updating device tree: start
+[2400] Updating device tree: done
+[2410] booting linux @ 0x40000000, ramdisk @ 0x43600000 (0), tags/device tree @ 0x43400000
+[2410] Jumping to kernel via monitor
+[    0.000000] Booting Linux on physical CPU 0x0000000100 [0x410fd034]
+[    0.000000] Linux version 7.0.0-msm89x7 (lkno@archlinux-lkno) (aarch64-linux-gnu-gcc (GCC) 15.1.0, GNU ld (GNU Binutils) 2.44) #1 SMP PREEMPT Sat Apr 25 00:45:33 CST 2026
+[    0.000000] KASLR disabled due to lack of seed
+[    0.000000] Machine model: Readboy G500X
+[    0.000000] earlycon: msm_serial_dm0 at MMIO 0x00000000078b0000 (options '115200n8')
+[    0.000000] printk: legacy bootconsole [msm_serial_dm0] enabled
+[    0.000000] printk: debug: ignoring loglevel setting.
+[    0.000000] efi: UEFI not found.
+[    0.000000] OF: reserved mem: 0x0000000085b00000..0x00000000862fffff (8192 KiB) nomap non-reusable reserved@85b00000
+[    0.000000] OF: reserved mem: 0x0000000086300000..0x00000000863fffff (1024 KiB) nomap non-reusable smem@86300000
+[    0.000000] OF: reserved mem: 0x0000000086400000..0x00000000867fffff (4096 KiB) nomap non-reusable reserved@86400000
+[    0.000000] OF: reserved mem: 0x0000000092100000..0x000000009227ffff (1536 KiB) nomap non-reusable rmtfs@92100000
+[    0.000000] cma: Reserved 16 MiB at 0x00000000fe800000
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] psci: OSI mode supported.
+[    0.000000] psci: [Firmware Bug]: failed to set PC mode: -1
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000040000000-0x0000000085afffff]
+[    0.000000]   node   0: [mem 0x0000000085b00000-0x00000000867fffff]
+[    0.000000]   node   0: [mem 0x0000000086800000-0x00000000920fffff]
+[    0.000000]   node   0: [mem 0x0000000092100000-0x000000009227ffff]
+[    0.000000]   node   0: [mem 0x0000000092280000-0x00000000ffffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000040000000-0x00000000ffffffff]
+[    0.000000] percpu: Embedded 34 pages/cpu s98520 r8192 d32552 u139264
+[    0.000000] pcpu-alloc: s98520 r8192 d32552 u139264 alloc=34*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: ARM erratum 845719
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: console=ttyMSM0,115200n8 earlycon ignore_loglevel loglevel=8 clk_ignore_unused modprobe.blacklist=msm 
+[    0.000000] printk: log buffer data + meta data: 131072 + 458752 = 589824 bytes
+[    0.000000] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size adjusted to 3MB
+[    0.000000] software IO TLB: area num 8.
+[    0.000000] software IO TLB: SWIOTLB bounce buffer size roundup to 4MB
+[    0.000000] software IO TLB: mapped [mem 0x00000000fae00000-0x00000000fb200000] (4MB)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 786432
+[    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] ftrace: allocating 43818 entries in 172 pages
+[    0.000000] ftrace: allocated 172 pages with 4 groups
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Rude variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 30 jiffies.
+[    0.000000] RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.000000] RCU Tasks Rude: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] arch_timer: cp15 timer running at 19.20MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000001] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.010971] Console: colour dummy device 80x25
+[    0.018684] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.00 BogoMIPS (lpj=64000)
+[    0.023187] pid_max: default: 32768 minimum: 301
+[    0.033820] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.038212] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.046005] VFS: Finished mounting rootfs on nullfs
+[    0.056481] rcu: Hierarchical SRCU implementation.
+[    0.058002] rcu: 	Max phase no-delay instances is 1000.
+[    0.063187] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.068871] EFI services will not be available.
+[    0.076866] smp: Bringing up secondary CPUs ...
+[    0.081678] Detected VIPT I-cache on CPU1
+[    0.082086] CPU1: Booted secondary processor 0x0000000000 [0x410fd034]
+[    0.083239] Detected VIPT I-cache on CPU2
+[    0.083581] CPU2: Booted secondary processor 0x0000000001 [0x410fd034]
+[    0.084756] Detected VIPT I-cache on CPU3
+[    0.085103] CPU3: Booted secondary processor 0x0000000002 [0x410fd034]
+[    0.086227] Detected VIPT I-cache on CPU4
+[    0.086578] CPU4: Booted secondary processor 0x0000000003 [0x410fd034]
+[    0.087700] Detected VIPT I-cache on CPU5
+[    0.087928] CPU5: Booted secondary processor 0x0000000101 [0x410fd034]
+[    0.088913] Detected VIPT I-cache on CPU6
+[    0.089103] CPU6: Booted secondary processor 0x0000000102 [0x410fd034]
+[    0.090053] Detected VIPT I-cache on CPU7
+[    0.090244] CPU7: Booted secondary processor 0x0000000103 [0x410fd034]
+[    0.090373] smp: Brought up 1 node, 8 CPUs
+[    0.162842] SMP: Total of 8 processors activated.
+[    0.166902] CPU: All CPU(s) started at EL1
+[    0.171694] CPU features: detected: 32-bit EL0 Support
+[    0.175694] CPU features: detected: 32-bit EL1 Support
+[    0.180791] CPU features: detected: CRC32 instructions
+[    0.185914] CPU features: detected: PMUv3
+[    0.191130] alternatives: applying system-wide alternatives
+[    0.197711] Memory: 3016928K/3145728K available (14976K kernel code, 2102K rwdata, 4064K rodata, 1984K init, 420K bss, 105732K reserved, 16384K cma-reserved)
+[    0.202114] devtmpfs: initialized
+[    0.227766] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    0.227840] posixtimers hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.236465] futex hash table entries: 2048 (131072 bytes on 1 NUMA nodes, total 128 KiB, linear).
+[    0.244484] 26816 pages in range for non-PLT usage
+[    0.244492] 518336 pages in range for PLT usage
+[    0.253929] DMI not present or invalid.
+[    0.265094] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.267091] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.271615] audit: initializing netlink subsys (disabled)
+[    0.279875] audit: type=2000 audit(0.159:1): state=initialized audit_enabled=0 res=1
+[    0.281100] thermal_sys: Registered thermal governor 'step_wise'
+[    0.284928] cpuidle: using governor menu
+[    0.298819] NET: Registered PF_QIPCRTR protocol family
+[    0.302720] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.307839] ASID allocator initialised with 65536 entries
+[    0.326893] Internal error: synchronous external abort: 0000000096000210 [#1]  SMP
+
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.BF.3.3-00206
+S - IMAGE_VARIANT_STRING=FAASANAZA
+S - OEM_IMAGE_VERSION_STRING=dslrjb-ARM
+S - Boot Config, 0x000000e1
+B -       246 - PBL, Start
+B -      2948 - bootable_media_detect_entry, Start
+B -    129432 - bootable_media_detect_success, Start
+B -    129438 - elf_loader_entry, Start
+B -    131202 - auth_hash_seg_entry, Start
+B -    131452 - auth_hash_seg_exit, Start
+B -    160184 - elf_segs_hash_verify_entry, Start
+B -    260437 - PBL, End
+B -    270504 - SBL1, Start
+B -    324947 - pm_device_init, Start
+B -    328302 - PON REASON:PM0:0x20020 PM1:0x200020020 
+D -     25986 - pm_device_init, Delta
+B -    352793 - boot_flash_init, Start
+D -         0 - boot_flash_init, Delta
+B -    355111 - boot_config_data_table_init, Start
+D -      8814 - boot_config_data_table_init, Delta - (0 Bytes)
+B -    368562 - CDT version:3,Platform ID:11,Major ID:2,Minor ID:0,Subtype:0
+B -    374631 - sbl1_ddr_set_params, Start
+B -    378932 - cpr_init, Start
+D -      3751 - cpr_init, Delta
+B -    384940 - Pre_DDR_clock_init, Start
+D -       335 - Pre_DDR_clock_init, Delta
+D -         0 - sbl1_ddr_set_params, Delta
+B -    397140 - do ddr sanity test, Start
+D -       305 - do ddr sanity test, Delta
+B -    402813 - pm_driver_init, Start
+B -    409310 - Manually set to USB500 mode
+B -    410133 - raw vbat: 3861, gain: -16
+B -    413854 - vbat: 3706
+B -    416203 - Battery good, bootup
+D -     13420 - pm_driver_init, Delta
+B -    422943 - vsense_init, Start
+D -        30 - vsense_init, Delta
+B -    429714 - DDR Training restore, Start
+D -       305 - DDR Training restore, Delta
+B -    444842 - clock_init, Start
+D -       152 - clock_init, Delta
+B -    445086 - Image Load, Start
+D -     86315 - QSEE Image Loaded, Delta - (1475036 Bytes)
+B -    531432 - Image Load, Start
+D -       274 - SEC Image Loaded, Delta - (2048 Bytes)
+B -    538752 - sbl1_efs_handle_cookies, Start
+D -       549 - sbl1_efs_handle_cookies, Delta
+B -    546529 - Image Load, Start
+D -     12627 - DEVCFG Image Loaded, Delta - (55444 Bytes)
+B -    559858 - Image Load, Start
+D -     20618 - RPM Image Loaded, Delta - (180844 Bytes)
+B -    580506 - Image Load, Start
+D -     52338 - APPSBL Image Loaded, Delta - (572640 Bytes)
+B -    632875 - QSEE Execution, Start
+D -       122 - QSEE Execution, Delta
+B -    638609 - USB D+ check, Start
+D -       732 - USB D+ check, Delta
+B -    644953 - SBL1, End
+D -    376828 - SBL1, Delta
+S - Flash Throughput, 26000 KB/s  (2289404 Bytes,  85331 us)
+S - DDR Frequency, 806 MHz
+S - Core 0 Frequency, 800 MHz
+Android Bootloader - UART_DM Initialized!!!
+[40] Qseecom Init Done in Appsbl
+[40] secure app region addr=0x85b00000 size=0x800000[50] TZ App region notif returned with status:0 addr:85b00000 size:8388608
+[50] TZ App log region register returned with status:0 addr:8f6a6000 size:4096
+[60] Qseecom TZ Init Done in Appsbl
+[70] Loading cmnlib done
+[80] <8>keymaster: "\"KEYMASTER Init \""
+[110] init_panel_data BOE_NS0_1200p_VIDEO_PANEL
+[120] <init_panel_data> panel_id = boe_ns0_1200p_video
+[120] <init_panel_data> panel_id = 5
+[190] jiyh: target_panel_reset: enable gpio: 24, reset gpio: 60, vio_gpio: 47, vci_gpio: 131
+[190]  target_panel_reset: pinfo->mipi.use_enable_gpio: 0
+[210] target_panel_reset: pinfo->is_avdd_en 1
+[1280] zdn_add mdss_dsi_panel_initialize in 
+[1290] zdn_add panel tx status 0 1 
+[1290] mdss_dsi_read_panel_signature:zdn_add  panel_signature 82790d.
+[1320] Panel CMD: command mode dma test failed
+[1330] 82790d Panel id:0x0 ret 0.
+[1360] Panel CMD: command mode dma test failed
+[1360] 82790d Panel id:0x0 ret 0.
+[1400] Panel CMD: command mode dma test failed
+[1400] 82790d Panel id:0x0 ret 0.
+[1400] mdss_dsi_read_panel_signature:zdn_add in response_value 0.
+[1410] zdn_add response_value 0 status 82790d 
+[1410] dsi panel init error
+[1640] target_backlight_ctrl in
+[1650] pwm ctrl enable=0
+[2120] <init_panel_data> switch(tp_id) tp_id = 1
+[2120] init_panel_data XZ_NT51021_1200p_VIDEO_PANEL from tp_id
+[2130] <init_panel_data> panel_id = xz_nt51021_1200p_video
+[2130] <init_panel_data> panel_id = 7
+[2200] jiyh: target_panel_reset: enable gpio: 24, reset gpio: 60, vio_gpio: 47, vci_gpio: 131
+[2200]  target_panel_reset: pinfo->mipi.use_enable_gpio: 1
+[2220] target_panel_reset: pinfo->is_avdd_en 0
+[3330] zdn_add mdss_dsi_panel_initialize in 
+[3330] zdn_add panel tx status 0 1 
+[3330] mdss_dsi_read_panel_signature:zdn_add  panel_signature 0.
+[3340] mdss_dsi_read_panel_signature:zdn_add in response_value 0.
+[3340] zdn_add response_value 0 status 0 
+[3450] mdss_dsi_panel_initialize status 0 
+[3530] target_backlight_ctrl in
+[3530] pwm ctrl enable=1
+[3560] <target_display_init> display init done, Go to save_display_panel_to_oem!!
+[3570] <get_oem_display_panel_from_supp_panels> display_panel:xz_nt51021_1200p_video
+[3570] <save_display_panel_to_oem> ret:7
+[3580] date:0x7d16
+[3580] psn:0xaa398760
+[3580] serialno:7d16aa398760
+[3580] Device is unlocked! Skipping verification...
+[3590] Your device has been unlocked and can't be trusted!
+[3590] <8>keymaster: "\"cmd_id=KEYMASTER_SET_ROT\""
+[3600] <8>keymaster: "\"cmd_id=KEYMASTER_GET_VERSION\""
+[3600] Authentication Key not yet programmed
+[3610] <8>keymaster: "\"QSEE_STOR_RPMB_NOT_PROVISIONED\""
+[3610] qcom,board-id in device tree is (12) not a multiple of (8)
+[3620] Using default #addr_cell_size: 2
+[3620] Using default #size_cell_size: 1
+[3630] Using default #addr_cell_size: 2
+[3630] Using default #size_cell_size: 1
+[3640] <8>keymaster: "\"cmd_id=KEYMASTER_MILESTONE_CALL\""
+[3640] Qseecom De-Init Done in Appsbl
+[3650] Channel alloc freed
+Android Bootloader - UART_DM Initialized!!!
+[0] welcome to lk
+
+[10] platform_init()
+[10] target_init()
+[20] MMC card: SLD64G (3.0, 06 2001), manufacturer: 88, OEM: 103, capacity: 61865984000 bytes
+[30] SDHC Running in HS400 mode
+[40] Done initialization of the card
+[40] Waiting for the RPM to populate smd channel table
+[40] lk2nd_init()
+[50] Booted @ 0x40008000, r0=0x0, r1=0x0, r2=0x43400000
+[50] MMU mapping mismatch @ 0x43400000: 0x43401c1e != 0x43400c1a
+[60] Found valid DTB with 1016 bytes total
+[60] Command line from previous bootloader: lk2nd androidboot.emmc=true androidboot.verifiedbootstate=orange androidboot.veritymode=enforcing androidboot.keymaster=1 androidboot.serialno=7d16aa398760 androidboot.baseband=msm mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_xz_nt51021_video:1:none:cfg:single_dsi:ldo17_status=1
+[90] Failed to find matching lk2nd device node: -1
+[100] MDP continuous splash detected: pipe RGB_0, base: 0x90001000, stride: 3600, src: 1200x1920 (0,0), img: 1200x1920, out: 1200x1920 (0,0), format: 0x2243f (bpp: 3)
+[120] Display refresh: cmd mode: 0, auto refresh: 0 (sel: 0x1f20)
+[130] Registering wrapper bio devices...
+[140] Registering mmc_sdhci bio devices...
+[150] Error: Command timeout error
+[150] Failure getting OCR response from MMC Card
+[150] MMC card failed to respond, try for SD card
+[160] Error: Command timeout error
+[160] The response for CMD8 does not match the supplied value
+[160] Failed to initialize SD card
+[170] Failed detecting MMC/SDC @ slot2
+[170] SD card MMC is unavailable.
+[170] block devices:
+[180]  | dev        | label           | size       | Leaf |
+[180]  | wrp0p47    | lk2nd           |    512 KiB | Yes  |
+[190]  | wrp0p46    | userdata        |  52983 MiB | Yes  |
+[190]  | wrp0p45    | logdump         |     64 MiB | Yes  |
+[200]  | wrp0p44    | dpo             |      8 KiB | Yes  |
+[200]  | wrp0p43    | msadp           |    256 KiB | Yes  |
+[210]  | wrp0p42    | apdp            |    256 KiB | Yes  |
+[210]  | wrp0p41    | keymasterbak    |    256 KiB | Yes  |
+[220]  | wrp0p40    | keymaster       |    256 KiB | Yes  |
+[220]  | wrp0p39    | cmnlib64bak     |    256 KiB | Yes  |
+[230]  | wrp0p38    | cmnlib64        |    256 KiB | Yes  |
+[230]  | wrp0p37    | cmnlibbak       |    256 KiB | Yes  |
+[240]  | wrp0p36    | cmnlib          |    256 KiB | Yes  |
+[250]  | wrp0p35    | mcfg            |      4 MiB | Yes  |
+[250]  | wrp0p34    | syscfg          |    512 KiB | Yes  |
+[260]  | wrp0p33    | mdtp            |     32 MiB | Yes  |
+[260]  | wrp0p32    | dip             |   1024 KiB | Yes  |
+[270]  | wrp0p31    | mota            |    512 KiB | Yes  |
+[270]  | wrp0p30    | limits          |     32 KiB | Yes  |
+[280]  | wrp0p29    | oem             |    256 MiB | Yes  |
+[280]  | wrp0p28    | config          |     32 KiB | Yes  |
+[290]  | wrp0p27    | keystore        |    512 KiB | Yes  |
+[290]  | wrp0p26    | misc            |   1024 KiB | Yes  |
+[300]  | wrp0p25    | persist         |     32 MiB | Yes  |
+[300]  | wrp0p24    | cache           |    256 MiB | Yes  |
+[310]  | wrp0p23p1  |                 |    832 MiB | Yes  |
+[310]  | wrp0p23p0  |                 |    243 MiB | Yes  |
+[320]  | wrp0p23    | system          |   4608 MiB |      |
+[320]  | wrp0p22    | devinfo         |   1024 KiB | Yes  |
+[330]  | wrp0p21    | recovery        |     64 MiB | Yes  |
+[340]  | wrp0p20    | boot            |     63 MiB | Yes  |
+[340]  | wrp0p19    | abootbak        |   1024 KiB | Yes  |
+[350]  | wrp0p18    | aboot           |   1024 KiB | Yes  |
+[350]  | wrp0p17    | splash          |     11 MiB | Yes  |
+[360]  | wrp0p16    | sec             |     16 KiB | Yes  |
+[360]  | wrp0p15    | fsg             |      1 MiB | Yes  |
+[370]  | wrp0p14    | DDR             |     32 KiB | Yes  |
+[370]  | wrp0p13    | modemst2        |      1 MiB | Yes  |
+[380]  | wrp0p12    | modemst1        |      1 MiB | Yes  |
+[380]  | wrp0p11    | dsp             |     16 MiB | Yes  |
+[390]  | wrp0p10    | devcfgbak       |    256 KiB | Yes  |
+[390]  | wrp0p9     | devcfg          |    256 KiB | Yes  |
+[400]  | wrp0p8     | tzbak           |      2 MiB | Yes  |
+[400]  | wrp0p7     | tz              |      2 MiB | Yes  |
+[410]  | wrp0p6     | rpmbak          |    512 KiB | Yes  |
+[410]  | wrp0p5     | rpm             |    512 KiB | Yes  |
+[420]  | wrp0p4     | sbl1bak         |    512 KiB | Yes  |
+[430]  | wrp0p3     | sbl1            |    512 KiB | Yes  |
+[430]  | wrp0p2     | ssd             |      8 KiB | Yes  |
+[440]  | wrp0p1     | fsc             |      1 KiB | Yes  |
+[440]  | wrp0p0     | modem           |     84 MiB | Yes  |
+[450]  | wrp0       |                 |  59000 MiB |      |
+[450] boot: Trying to boot from the file system...
+[460] boot: Bootable file system not found. Reverting to android boot.
+[460] Loading (boot) image (33906688): start
+[610] Loading (boot) image (33906688): done
+[610] use_signed_kernel=0, is_unlocked=1, is_tampered=0.
+[620] Uncpmpressed kernel in use
+[620] Kernel image not patched..Unable to locate dt offset
+[620] DTB offset is incorrect, kernel image does not have appended DTB
+[630] Device info 0x00000126/00010000/0x0002000b/0, pmic 0x10019/0x20037/0x0/0x0
+[640] ERROR: Appended Device Tree Blob not found
+[640] ERROR: Could not do normal boot. Reverting to fastboot mode.
+[650] fastboot_init()
+[750] USB init ept @ 0x8f692000
+[770] udc_start()
+[880] -- reset --
+[880] -- portchange --
+[940] -- reset --
+[950] -- portchange --
+[1020] fastboot: processing commands

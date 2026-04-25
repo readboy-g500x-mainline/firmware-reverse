@@ -1,0 +1,73 @@
+// SPDX-License-Identifier: GPL-2.0-only
+/dts-v1/;
+
+#include "msm8937.dtsi"
+#include "pm8937.dtsi"
+#include "pmi8950.dtsi"
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/input/input.h>
+
+/ {
+	model = "Readboy G500X";
+	compatible = "readboy,g500x", "qcom,msm8937";
+	chassis-type = "tablet";
+
+	qcom,msm-id = <0x126 0x00>, <0x127 0x00>;
+	qcom,board-id = <0x2000b 0x00>;
+
+	aliases {
+		serial0 = &blsp1_uart2;
+	};
+
+	chosen {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+		bootargs = "console=ttyMSM0,115200n8 earlycon ignore_loglevel loglevel=8 clk_ignore_unused modprobe.blacklist=msm";
+		stdout-path = "serial0:115200n8";
+	};
+
+	memory@40000000 {
+		device_type = "memory";
+		reg = <0x0 0x40000000 0x0 0xc0000000>; /* 3GB */
+	};
+};
+
+&blsp1_uart2 {
+	status = "okay";
+};
+
+/* 主动禁用 GPU 和显示控制器 */
+&gpu {
+	status = "disabled";
+};
+
+&mdss {
+	status = "disabled";
+};
+
+/* 其他外设暂时禁用 */
+&sdhc_1 { status = "disabled"; };
+&sdhc_2 { status = "disabled"; };
+&usb { status = "disabled"; };
+&usb_hs_phy { status = "disabled"; };
+&wcnss { status = "disabled"; };
+
+&pm8937_pwrkey {
+	linux,code = <KEY_POWER>;
+};
+
+&tlmm {
+	blsp1_uart2_default: blsp1-uart2-default-state {
+		pins = "gpio4", "gpio5";
+		function = "blsp_uart2";
+		drive-strength = <2>;
+		bias-disable;
+	};
+};
+
+&rpm_requests {
+	regulators {
+		compatible = "qcom,rpm-pm8937-regulators";
+	};
+};
